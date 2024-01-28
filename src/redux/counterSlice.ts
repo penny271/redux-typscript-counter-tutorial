@@ -23,9 +23,9 @@ export const counterSlice = createSlice({
   },
 });
 
-// - 下記2つはセット
+// - 下記2つのexportはセット
 // 個々のreducerを使えるようにする
 export const { increment, decrement, incrementByAmount } = counterSlice.actions;
 
-// このreducerをエクスポートすることで、ストア(store.js)のroot reducerに含めることができます。
+// このreducerをエクスポートすることで、ストア(store.js)の root reducerに含めることができます。
 export default counterSlice.reducer;
